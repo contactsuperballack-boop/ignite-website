@@ -1,0 +1,114 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>#loader{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center;transition:transform .9s cubic-bezier(.76,0,.24,1)}#loader.done{transform:translateY(-100%)}
+.ld{display:grid;justify-items:center;gap:20px}.ld img{width:150px;height:150px;display:block;opacity:0;transform:scale(.92);animation:ldin .9s .1s cubic-bezier(.16,1,.3,1) forwards}
+.ldbar{width:150px;height:1px;background:rgba(255,255,255,.18);overflow:hidden}.ldbar i{display:block;height:100%;background:#E0805F;transform:scaleX(0);transform-origin:0 50%;animation:ldbar 1.5s .2s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes ldin{to{opacity:1;transform:none}}@keyframes ldbar{to{transform:scaleX(1)}}
+html.loading{overflow:hidden}.noload #loader{display:none}
+@media(prefers-reduced-motion:reduce){#loader{transition:opacity .3s}#loader.done{transform:none;opacity:0}.ld img{animation:none;opacity:1;transform:none}.ldbar i{animation:none;transform:scaleX(1)}}</style>
+<noscript><style>#loader{display:none}</style></noscript>
+<script>(function(d){try{d.classList.add(sessionStorage.getItem("ig")?"noload":"loading")}catch(e){}})(document.documentElement)</script>
+<link rel="icon" href="/assets/favicon.png"><title>Ignite Academy | AI, Engineering and Design Training</title><meta name="description" content="Ignite Academy trains SI-native experts in AI, agents, vibe coding, security, cloud, design, data and marketing. Learn, build and ship. Join the waitlist.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--bg:#F4F4F0;--ink:#111;--mut:#5d5b55;--line:#D9D6CE;--ember:#AA4D31;--card:#FBFBF8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121110;--ink:#F1EFE9;--mut:#a29f96;--line:#2c2a27;--ember:#E0805F;--card:#191817;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121110;--ink:#F1EFE9;--mut:#a29f96;--line:#2c2a27;--ember:#E0805F;--card:#191817;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Outfit,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--ink);color:var(--bg);padding:8px 12px;z-index:30}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;letter-spacing:.01em}
+.brand img{width:36px;height:36px;display:block}
+nav{display:flex;align-items:center;gap:22px;font-size:15px}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg)!important;padding:12px 20px;text-decoration:none;font-weight:500;font-size:15px;border:1px solid var(--ink);transition:transform .15s}
+.btn:active{transform:scale(.98)}.btn.ghost{background:transparent;color:var(--ink)!important}
+.meta{font:500 12px/1.4 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ember)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding:72px 0 64px}
+h1{font-weight:500;font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-.025em;margin:14px 0 20px}
+h1 em,h2 em{font:italic 400 1em "Instrument Serif",serif;color:var(--ember)}
+.lead{font-size:19px;color:var(--mut);max-width:34em;margin:0 0 28px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.frame{aspect-ratio:1/1;width:100%;overflow:hidden;border:1px solid var(--line)}.frame img{width:100%;height:100%;object-fit:cover;object-position:42% 50%;display:block}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-weight:500;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-.02em;margin:12px 0 14px;max-width:16em}
+.sub{color:var(--mut);max-width:38em;margin:0 0 40px}
+.arms{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--card)}
+.arm{display:flex;flex-direction:column;padding:32px 28px;border-right:1px solid var(--line);text-decoration:none;transition:background .2s}
+.arm:last-child{border-right:0}.arm:hover{background:var(--bg)}
+.arm h3{font-size:30px;font-weight:500;letter-spacing:-.02em;margin:10px 0 8px}.arm h3 span{font-family:"Instrument Serif",serif;font-style:italic;color:var(--ember)}
+.arm p{color:var(--mut);margin:0 0 18px;font-size:16px}.arm ul{list-style:none;margin:0 0 28px;padding:0;font-size:15px}
+.arm li{padding:7px 0;border-top:1px solid var(--line)}.arm .go{margin-top:auto;font-weight:500}.arm .go::after{content:" \2192"}
+.sys{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.sys div{padding:22px 20px;border-right:1px solid var(--line)}.sys div:last-child{border:0}.sys b{display:block;font-weight:500;margin-bottom:4px}.sys span{color:var(--mut);font-size:15px}
+.contact{display:flex;flex-wrap:wrap;gap:12px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.svc div{padding:28px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}.svc b{display:block;font-size:20px;font-weight:500;letter-spacing:-.01em;margin-bottom:6px}.svc b i{font:italic 400 1em "Instrument Serif",serif;color:var(--ember)}.svc span{color:var(--mut);font-size:15px}@media(max-width:860px){.svc{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:36px;padding:44px 0}.arms{grid-template-columns:1fr}.arm{border-right:0;border-bottom:1px solid var(--line)}.arm:last-child{border-bottom:0}.sys{grid-template-columns:1fr 1fr}.sys div:nth-child(2){border-right:0}.sys div:nth-child(-n+2){border-bottom:1px solid var(--line)}nav .hide{display:none}section{padding:52px 0}}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.grid3>div{padding:28px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}
+.grid3 h3{font-size:21px;font-weight:500;letter-spacing:-.01em;margin:0 0 6px}.grid3 p{margin:0;color:var(--mut);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}.steps>div{padding:26px 24px;border-right:1px solid var(--line)}.steps>div:last-child{border:0}.steps b{display:block;font-weight:500;font-size:19px;margin:6px 0}.steps p{margin:0;color:var(--mut);font-size:15px}
+.flow{font:500 14px/1.8 "DM Mono",monospace;color:var(--mut);margin:0 0 36px}
+@media(max-width:860px){.grid3,.steps{grid-template-columns:1fr}.steps>div{border-right:0;border-bottom:1px solid var(--line)}.steps>div:last-child{border-bottom:0}}</style>
+
+
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#F4F4F0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/academy/">
+<link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN.com/academy/"><link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN.com/academy/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Ignite"><meta property="og:title" content="Ignite Academy | AI, Engineering and Design Training"><meta property="og:description" content="Ignite Academy trains SI-native experts in AI, agents, vibe coding, security, cloud, design, data and marketing. Learn, build and ship. Join the waitlist."><meta property="og:url" content="https://YOUR-DOMAIN.com/academy/">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-academy.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Academy by Ignite">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Ignite Academy | AI, Engineering and Design Training"><meta name="twitter:description" content="Ignite Academy trains SI-native experts in AI, agents, vibe coding, security, cloud, design, data and marketing. Learn, build and ship. Join the waitlist."><meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/og-academy.png"><meta name="twitter:image:alt" content="Academy by Ignite">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://YOUR-DOMAIN.com/#org","name":"Ignite","url":"https://YOUR-DOMAIN.com/","logo":{"@type":"ImageObject","url":"https://YOUR-DOMAIN.com/assets/logo.png"},"description":"Ignite is an SI-native company delivering digital products, data, experts, evaluation, benchmarks and intelligence as a service.","email":"contact.superballack@gmail.com","telephone":"+2347042929458","parentOrganization":{"@type":"Organization","name":"Trustbridge Corp"},"sameAs":["https://youtube.com/@istudio_live","https://www.tiktok.com/@istudio_live","https://www.instagram.com/istudio.live"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"contact.superballack@gmail.com","telephone":"+2347042929458"}},{"@type":"WebSite","@id":"https://YOUR-DOMAIN.com/#website","url":"https://YOUR-DOMAIN.com/","name":"Ignite","publisher":{"@id":"https://YOUR-DOMAIN.com/#org"},"inLanguage":"en"},{"@type":"WebPage","@id":"https://YOUR-DOMAIN.com/academy/#webpage","url":"https://YOUR-DOMAIN.com/academy/","name":"Ignite Academy | AI, Engineering and Design Training","description":"Ignite Academy trains SI-native experts in AI, agents, vibe coding, security, cloud, design, data and marketing. Learn, build and ship. Join the waitlist.","inLanguage":"en","isPartOf":{"@id":"https://YOUR-DOMAIN.com/#website"},"breadcrumb":{"@id":"https://YOUR-DOMAIN.com/academy/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://YOUR-DOMAIN.com/academy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Ignite","item":"https://YOUR-DOMAIN.com/"},{"@type":"ListItem","position":2,"name":"Academy","item":"https://YOUR-DOMAIN.com/academy/"}]},{"@type":"Service","name":"Ignite Academy","serviceType":"AI and technology training","description":"Training in AI, agents, vibe coding, security, cloud, design, data, product and marketing, built around real projects.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/academy/"}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/premium.css">
+</head><body data-arm="academy">
+<div id="loader" aria-hidden="true"><div class="ld"><img src="/assets/logo.webp" alt="" width="150" height="150"><div class="ldbar"><i></i></div></div></div>
+<script src="/assets/loader.js"></script>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="armbar"><div class="wrap"><a data-k="home" href="/">Ignite</a><a data-k="build" href="/build/">iBuild</a><a data-k="studios" href="/studios/">iStudios</a><a data-k="academy" href="/academy/" aria-current="page">Academy</a></div></div>
+<header><div class="wrap"><a class="brand home" href="#top"><img src="/assets/logo.webp" alt="" width="36" height="36">Ignite <span style="color:var(--ember);font-weight:500">/ Academy</span></a>
+<nav aria-label="Primary"><a class="hide home" href="#top">&larr; Ignite</a><a class="btn" href="#join">Join the waitlist</a></nav></div></header>
+<main id="main"><div id="top" class="wrap hero"><div><nav class="meta" aria-label="Breadcrumb"><a href="/">Ignite</a> / <span aria-current="page">Academy</span></nav>
+<h1>Learn it. Build it. <em>Ship</em> it.</h1><p class="lead">Ignite Academy develops SI-native experts: people who use intelligence as a production capability and prove it with real work, not just attendance.</p><div class="cta"><a class="btn" href="#join">Join the waitlist</a><a class="btn ghost home" href="#top">Back to Ignite</a></div></div><div class="frame art"><svg viewBox="0 0 400 400" role="img" aria-label="Steps rising from learning to shipped work"><g stroke="var(--line)"><path d="M0 330H400"/><path d="M0 300H400"/><path d="M0 270H400"/></g>
+<g data-p="10"><rect x="40" y="290" width="48" height="40" fill="var(--bg)" stroke="var(--ink)" stroke-width="1.5"/><rect x="96" y="250" width="48" height="80" fill="var(--bg)" stroke="var(--ink)" stroke-width="1.5"/><rect x="152" y="210" width="48" height="120" fill="var(--bg)" stroke="var(--ink)" stroke-width="1.5"/><rect x="208" y="170" width="48" height="160" fill="var(--bg)" stroke="var(--ink)" stroke-width="1.5"/><rect x="264" y="130" width="48" height="200" fill="var(--bg)" stroke="var(--ink)" stroke-width="1.5"/><rect x="320" y="90" width="48" height="240" fill="var(--ember)"/></g>
+<g data-p="-16"><path d="M64 270Q150 150 344 70" fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 6"/><circle cx="64" cy="270" r="8" fill="var(--bg)" stroke="var(--ink)" stroke-width="1.5"/><path d="M344 70V40L372 52L344 64" fill="var(--ember)" stroke="var(--ink)" stroke-width="1.5"/></g></svg></div></div>
+<div class="marquee" aria-hidden="true"><div class="mq"><span>Models and tools</span><span>Prompting</span><span>Agents</span><span>Vibe coding</span><span>Security</span><span>Cloud</span><span>Design</span><span>Data</span><span>Product</span><span>Marketing</span><span>Models and tools</span><span>Prompting</span><span>Agents</span><span>Vibe coding</span><span>Security</span><span>Cloud</span><span>Design</span><span>Data</span><span>Product</span><span>Marketing</span></div></div>
+<section><div class="wrap"><div class="meta">What you learn</div><h2>Core technology and <em>professional tracks.</em></h2><p class="sub">Learn the technology, then apply it to a profession and build something real.</p><p class="flow">Learn &rarr; Practice &rarr; Build &rarr; Ship &rarr; Measure &rarr; Improve</p><div class="grid3"><div><h3>AI, models and workflow</h3><p>AI and machine learning foundations, choosing models and tools, and designing workflows.</p></div><div><h3>Prompt and context engineering</h3><p>Structuring prompts, retrieval, memory and the information AI systems work from.</p></div><div><h3>Agentic AI and loops</h3><p>Agents, tool use, evaluation loops and keeping humans in control.</p></div><div><h3>Vibe coding and cybersecurity</h3><p>AI-assisted coding taken to production: testing, hardening and secure development.</p></div><div><h3>Cloud and graph engineering</h3><p>Cloud deployment, knowledge graphs and the infrastructure behind intelligent systems.</p></div><div><h3>Professional tracks</h3><p>Web and app development, design, data, product, marketing and content, each with AI in the workflow.</p></div></div></div></section>
+<section><div class="wrap"><div class="meta">Approach</div><h2>From first brief to <em>handoff.</em></h2><p class="sub">&nbsp;</p><div class="steps"><div><div class="meta">01</div><b>Learn and practice</b><p>Understand the technology and apply it to exercises in your chosen field.</p></div><div><div class="meta">02</div><b>Build and ship</b><p>Take a real problem through research, design, build, hardening and launch.</p></div><div><div class="meta">03</div><b>Measure and present</b><p>Measure results and present your work as evidence of what you can do.</p></div></div></div></section>
+<section id="join"><div class="wrap"><div class="meta">Join the waitlist</div>
+<h2>Start learning with <em>Ignite Academy.</em></h2>
+<p class="sub">No dates or fees are announced yet. Tell us what you want to learn and we’ll contact you when we have more to share.</p>
+<div class="aud"><span>Beginners</span><span>Working professionals</span><span>Creators</span></div>
+<form data-who="Ignite Academy" data-ev="waitlist" data-subject="Ignite Academy waitlist"><label>Your name<input name="name" required autocomplete="name"></label><label>Email address<input name="email" type="email" required autocomplete="email"></label><label>WhatsApp number (optional)<input name="phone" type="tel" autocomplete="tel"></label>
+<label>Which area interests you most?<select name="area" required><option value="">Select&hellip;</option><option>AI and technology (models, prompting, agents)</option><option>Web and app development</option><option>Motion graphics, 3D and design</option><option>Data analytics and data science</option><option>UI/UX and product</option><option>Digital marketing</option><option>Content creation and social media</option><option>Not sure yet</option></select></label>
+<label>Your experience level<select name="level" required><option value="">Select&hellip;</option><option>Just starting out</option><option>Some experience</option><option>Working professional</option></select></label>
+<label>What do you want to be able to build or do?<textarea name="goal" required></textarea></label>
+<div class="cta"><button class="btn" type="submit">Join via WhatsApp</button><button class="btn ghost" type="button">Join via email</button></div></form><div class="msg" role="status" style="display:none;border:1px solid var(--line);padding:14px;background:var(--card);max-width:620px;margin-top:16px"></div><p class="fine">Your details reach us only when you send the draft. See our <a href="/privacy/">Privacy Policy</a>.</p></div></section>
+
+<section id="contact"><div class="wrap"><div class="meta">Contact</div><h2>Let’s make something <em>real.</em></h2><p class="sub">Ask about the Academy.</p>
+<div class="contact"><a class="btn ghost" href="https://wa.me/2347042929458">WhatsApp 07042929458</a><a class="btn ghost" href="tel:07042929458">Call 07042929458</a><a class="btn ghost" href="mailto:contact.superballack@gmail.com">contact.superballack@gmail.com</a></div>
+<form id="f" data-who="Ignite Academy"><label>Your name<input name="name" required autocomplete="name"></label><label>Email address<input name="email" type="email" required autocomplete="email"></label><label>Business / organisation (optional)<input name="org" autocomplete="organization"></label><label>What are you interested in?<select name="need" required><option value="">Select&hellip;</option><option>AI and technology courses</option><option>Professional tracks</option><option>Not sure yet</option></select></label><label>Ideal timeline (optional)<input name="time"></label><label>A little about you<textarea name="about" required></textarea></label><div class="cta"><button class="btn" type="submit">Send via WhatsApp</button><button class="btn ghost" type="button" id="em">Send via email</button></div></form><div id="msg" role="status"></div><p class="fine">Your details reach us only when you send the draft. See our <a href="/privacy/">Privacy Policy</a>.</p></div></section></main>
+<footer><div class="wrap"><span>Ignite · Remote, based in Africa</span><span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/cookies/">Cookies</a> · <a href="#top">Back to top</a></span></div><div class="wrap fnav"><nav aria-label="Footer"><a href="/">Ignite</a><a href="/#about">About Us</a><a href="/build/">iBuild</a><a href="/studios/">iStudios</a><a href="/academy/">Academy</a></nav></div></footer>
+<script>
+// Links back to the main page. Set ROOT_DOMAIN (e.g. "example.com") when using subdomains.
+var ROOT_DOMAIN="";
+document.querySelectorAll(".home").forEach(function(a){a.href=ROOT_DOMAIN?"https://"+ROOT_DOMAIN:"/"});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="/assets/motion.js"></script>
+<script src="/assets/nav.js"></script>
+<script src="/assets/contact.js"></script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body></html>

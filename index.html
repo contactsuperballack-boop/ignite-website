@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>#loader{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center;transition:transform .9s cubic-bezier(.76,0,.24,1)}#loader.done{transform:translateY(-100%)}
+.ld{display:grid;justify-items:center;gap:20px}.ld img{width:150px;height:150px;display:block;opacity:0;transform:scale(.92);animation:ldin .9s .1s cubic-bezier(.16,1,.3,1) forwards}
+.ldbar{width:150px;height:1px;background:rgba(255,255,255,.18);overflow:hidden}.ldbar i{display:block;height:100%;background:#E0805F;transform:scaleX(0);transform-origin:0 50%;animation:ldbar 1.5s .2s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes ldin{to{opacity:1;transform:none}}@keyframes ldbar{to{transform:scaleX(1)}}
+html.loading{overflow:hidden}.noload #loader{display:none}
+@media(prefers-reduced-motion:reduce){#loader{transition:opacity .3s}#loader.done{transform:none;opacity:0}.ld img{animation:none;opacity:1;transform:none}.ldbar i{animation:none;transform:scaleX(1)}}</style>
+<noscript><style>#loader{display:none}</style></noscript>
+<script>(function(d){try{d.classList.add(sessionStorage.getItem("ig")?"noload":"loading")}catch(e){}})(document.documentElement)</script>
+<link rel="icon" href="/assets/favicon.png"><title>Ignite | SI-Native Company: Digital Products as a Service</title>
+<meta name="description" content="Ignite is an SI-native company delivering digital products, data, experts, evaluation, benchmarks and intelligence as a service. Remote, based in Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--bg:#F4F4F0;--ink:#111;--mut:#5d5b55;--line:#D9D6CE;--ember:#AA4D31;--card:#FBFBF8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121110;--ink:#F1EFE9;--mut:#a29f96;--line:#2c2a27;--ember:#E0805F;--card:#191817;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121110;--ink:#F1EFE9;--mut:#a29f96;--line:#2c2a27;--ember:#E0805F;--card:#191817;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Outfit,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--ink);color:var(--bg);padding:8px 12px;z-index:30}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;letter-spacing:.01em}
+.brand img{width:36px;height:36px;display:block}
+nav{display:flex;align-items:center;gap:22px;font-size:15px}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg)!important;padding:12px 20px;text-decoration:none;font-weight:500;font-size:15px;border:1px solid var(--ink);transition:transform .15s}
+.btn:active{transform:scale(.98)}.btn.ghost{background:transparent;color:var(--ink)!important}
+.meta{font:500 12px/1.4 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ember)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding:72px 0 64px}
+h1{font-weight:500;font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-.025em;margin:14px 0 20px}
+h1 em,h2 em{font:italic 400 1em "Instrument Serif",serif;color:var(--ember)}
+.lead{font-size:19px;color:var(--mut);max-width:34em;margin:0 0 28px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.frame{aspect-ratio:1/1;width:100%;overflow:hidden;border:1px solid var(--line)}.frame img{width:100%;height:100%;object-fit:cover;object-position:42% 50%;display:block}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-weight:500;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-.02em;margin:12px 0 14px;max-width:16em}
+.sub{color:var(--mut);max-width:38em;margin:0 0 40px}
+.arms{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--card)}
+.arm{display:flex;flex-direction:column;padding:32px 28px;border-right:1px solid var(--line);text-decoration:none;transition:background .2s}
+.arm:last-child{border-right:0}.arm:hover{background:var(--bg)}
+.arm h3{font-size:30px;font-weight:500;letter-spacing:-.02em;margin:10px 0 8px}.arm h3 span{font-family:"Instrument Serif",serif;font-style:italic;color:var(--ember)}
+.arm p{color:var(--mut);margin:0 0 18px;font-size:16px}.arm ul{list-style:none;margin:0 0 28px;padding:0;font-size:15px}
+.arm li{padding:7px 0;border-top:1px solid var(--line)}.arm .go{margin-top:auto;font-weight:500}.arm .go::after{content:" \2192"}
+.sys{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.sys div{padding:22px 20px;border-right:1px solid var(--line)}.sys div:last-child{border:0}.sys b{display:block;font-weight:500;margin-bottom:4px}.sys span{color:var(--mut);font-size:15px}
+.contact{display:flex;flex-wrap:wrap;gap:12px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.svc div{padding:28px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}.svc b{display:block;font-size:20px;font-weight:500;letter-spacing:-.01em;margin-bottom:6px}.svc b i{font:italic 400 1em "Instrument Serif",serif;color:var(--ember)}.svc span{color:var(--mut);font-size:15px}@media(max-width:860px){.svc{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:36px;padding:44px 0}.arms{grid-template-columns:1fr}.arm{border-right:0;border-bottom:1px solid var(--line)}.arm:last-child{border-bottom:0}.sys{grid-template-columns:1fr 1fr}.sys div:nth-child(2){border-right:0}.sys div:nth-child(-n+2){border-bottom:1px solid var(--line)}nav .hide{display:none}section{padding:52px 0}}
+</style>
+
+
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#F4F4F0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN.com/"><link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN.com/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Ignite"><meta property="og:title" content="Ignite | SI-Native Company: Digital Products as a Service"><meta property="og:description" content="Ignite is an SI-native company delivering digital products, data, experts, evaluation, benchmarks and intelligence as a service. Remote, based in Africa."><meta property="og:url" content="https://YOUR-DOMAIN.com/">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-main.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Ignite by Ignite">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Ignite | SI-Native Company: Digital Products as a Service"><meta name="twitter:description" content="Ignite is an SI-native company delivering digital products, data, experts, evaluation, benchmarks and intelligence as a service. Remote, based in Africa."><meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/og-main.png"><meta name="twitter:image:alt" content="Ignite by Ignite">
+<link rel="preload" as="image" href="/assets/hero-flame.webp" fetchpriority="high">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://YOUR-DOMAIN.com/#org","name":"Ignite","url":"https://YOUR-DOMAIN.com/","logo":{"@type":"ImageObject","url":"https://YOUR-DOMAIN.com/assets/logo.png"},"description":"Ignite is an SI-native company delivering digital products, data, experts, evaluation, benchmarks and intelligence as a service.","email":"contact.superballack@gmail.com","telephone":"+2347042929458","parentOrganization":{"@type":"Organization","name":"Trustbridge Corp"},"sameAs":["https://youtube.com/@istudio_live","https://www.tiktok.com/@istudio_live","https://www.instagram.com/istudio.live"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"contact.superballack@gmail.com","telephone":"+2347042929458"}},{"@type":"WebSite","@id":"https://YOUR-DOMAIN.com/#website","url":"https://YOUR-DOMAIN.com/","name":"Ignite","publisher":{"@id":"https://YOUR-DOMAIN.com/#org"},"inLanguage":"en"},{"@type":"WebPage","@id":"https://YOUR-DOMAIN.com/#webpage","url":"https://YOUR-DOMAIN.com/","name":"Ignite | SI-Native Company: Digital Products as a Service","description":"Ignite is an SI-native company delivering digital products, data, experts, evaluation, benchmarks and intelligence as a service. Remote, based in Africa.","inLanguage":"en","isPartOf":{"@id":"https://YOUR-DOMAIN.com/#website"},"breadcrumb":{"@id":"https://YOUR-DOMAIN.com/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://YOUR-DOMAIN.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Ignite","item":"https://YOUR-DOMAIN.com/"}]},{"@type":"Service","name":"SI Products-as-a-Service","description":"Ready-to-use products powered by super intelligence, set up for your use case instead of built from scratch.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/#services"},{"@type":"Service","name":"Data-as-a-Service","description":"Data prepared for intelligent systems and supplied on demand, sourced legally and ethically.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/#services"},{"@type":"Service","name":"Experts-as-a-Service","description":"Specialists in AI, engineering, design, data, product and more, available when the work needs them.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/#services"},{"@type":"Service","name":"Evaluation-as-a-Service","description":"Structured testing of how an intelligent system performs on the tasks you care about.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/#services"},{"@type":"Service","name":"Benchmark-as-a-Service","description":"Standard tests and measures for comparing models, systems and workflows.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/#services"},{"@type":"Service","name":"Intelligence-as-a-Service","description":"Intelligence delivered on demand into your workflows, from answering queries to research and automation.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/#services"}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/premium.css">
+</head><body>
+<div id="loader" aria-hidden="true"><div class="ld"><img src="/assets/logo.webp" alt="" width="150" height="150"><div class="ldbar"><i></i></div></div></div>
+<script src="/assets/loader.js"></script>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="armbar"><div class="wrap"><a data-k="home" href="/" aria-current="page">Ignite</a><a data-k="build" href="/build/">iBuild</a><a data-k="studios" href="/studios/">iStudios</a><a data-k="academy" href="/academy/">Academy</a></div></div>
+<header><div class="wrap"><a class="brand" href="#top"><img src="/assets/logo.webp" alt="" width="36" height="36">Ignite</a>
+<nav aria-label="Primary"><a class="hide" href="#services">Services</a><a class="hide" href="#arms">Explore</a><a class="hide" href="#about">About</a><a class="btn" href="#contact">Get in touch</a></nav></div></header>
+<main id="main"><div id="top" class="wrap hero">
+<div><div class="meta">Ignite / SI-native company</div>
+<h1>Super Intelligent Systems, <em>delivered</em> as a service.</h1>
+<p class="lead">Ignite is an SI-native company. We provide products, data, experts, evaluation, benchmarks and intelligence as a service.</p>
+<div class="cta"><a class="btn" href="#services">See what we provide</a><a class="btn ghost" href="#contact">Talk to us</a></div></div>
+<div class="frame"><img src="/assets/hero-flame.webp" width="1920" height="1080" fetchpriority="high" decoding="async" alt="Abstract flame-inspired artwork"></div></div>
+
+<div class="marquee" aria-hidden="true"><div class="mq"><span>SI Products-as-a-Service</span><span>Data-as-a-Service</span><span>Experts-as-a-Service</span><span>Evaluation-as-a-Service</span><span>Benchmark-as-a-Service</span><span>Intelligence-as-a-Service</span><span>SI Products-as-a-Service</span><span>Data-as-a-Service</span><span>Experts-as-a-Service</span><span>Evaluation-as-a-Service</span><span>Benchmark-as-a-Service</span><span>Intelligence-as-a-Service</span></div></div>
+<section id="services"><div class="wrap"><div class="meta">What we provide</div>
+<h2>Digital products, <em>as a service.</em></h2>
+<p class="sub">Ignite is built around intelligence from the start: how we work, what we deliver and who we train. Here are six ways we deliver it.</p>
+<div class="svcd"><div><h3>SI Products<i>-as-a-Service</i></h3><p class="what">Ready-to-use products powered by super intelligence, set up for your use case instead of built from scratch.</p><dl><dt>Who it’s for</dt><dd>Businesses and teams that want results without building in-house.</dd><dt>You get</dt><dd>A working product configured for how you operate.</dd></dl><a class="ask" href="#contact" data-need="SI Products-as-a-Service" aria-label="Ask about SI Products-as-a-Service">Ask about this</a></div><div><h3>Data<i>-as-a-Service</i></h3><p class="what">Data prepared for intelligent systems and supplied on demand, sourced legally and ethically.</p><dl><dt>Who it’s for</dt><dd>Teams building or running AI that depend on reliable data.</dd><dt>You get</dt><dd>Datasets prepared to your specification.</dd></dl><a class="ask" href="#contact" data-need="Data-as-a-Service" aria-label="Ask about Data-as-a-Service">Ask about this</a></div><div><h3>Experts<i>-as-a-Service</i></h3><p class="what">Specialists in AI, engineering, design, data, product and more, available when the work needs them.</p><dl><dt>Who it’s for</dt><dd>Teams that need specific expertise without a full-time hire.</dd><dt>You get</dt><dd>Specialists matched to the work you define.</dd></dl><a class="ask" href="#contact" data-need="Experts-as-a-Service" aria-label="Ask about Experts-as-a-Service">Ask about this</a></div><div><h3>Evaluation<i>-as-a-Service</i></h3><p class="what">Structured testing of how an intelligent system performs on the tasks you care about.</p><dl><dt>Who it’s for</dt><dd>Teams deploying AI who need to know whether it actually works.</dd><dt>You get</dt><dd>Clear findings you can act on.</dd></dl><a class="ask" href="#contact" data-need="Evaluation-as-a-Service" aria-label="Ask about Evaluation-as-a-Service">Ask about this</a></div><div><h3>Benchmark<i>-as-a-Service</i></h3><p class="what">Standard tests and measures for comparing models, systems and workflows.</p><dl><dt>Who it’s for</dt><dd>Anyone choosing between systems, or tracking whether one is improving.</dd><dt>You get</dt><dd>Comparable results, not guesswork.</dd></dl><a class="ask" href="#contact" data-need="Benchmark-as-a-Service" aria-label="Ask about Benchmark-as-a-Service">Ask about this</a></div><div><h3>Intelligence<i>-as-a-Service</i></h3><p class="what">Intelligence delivered on demand into your workflows, from answering queries to research and automation.</p><dl><dt>Who it’s for</dt><dd>Organisations that want answers and automation without managing the models.</dd><dt>You get</dt><dd>Intelligence on call, connected to your work.</dd></dl><a class="ask" href="#contact" data-need="Intelligence-as-a-Service" aria-label="Ask about Intelligence-as-a-Service">Ask about this</a></div></div></div></section>
+
+<section id="arms"><div class="wrap"><div class="meta">Explore Ignite</div>
+<h2>Where the work <em>happens.</em></h2>
+<p class="sub">Each part of Ignite has its own page. Start with the one that fits what you need.</p>
+<div class="arms">
+<a class="arm" data-arm="build" href="#arms"><div class="meta">iBuild</div><h3><span>i</span>Build</h3>
+<p>SI products and systems, built and delivered as a service.</p>
+<ul><li>Websites and web apps</li><li>Mobile apps and SaaS</li><li>MCPs, Skills and internal tools</li><li>SI assistants, agents and automation</li></ul><span class="go">Visit iBuild</span></a>
+<a class="arm" data-arm="studios" href="#arms"><div class="meta">iStudios</div><h3><span>i</span>Studios</h3>
+<p>The creative engine of an SI-native company. iCreate for production, iMedia for brand, sales and systems.</p>
+<ul><li>iCreate: motion, design, video, sound</li><li>iMedia: branding, sales support</li><li>Automated systems and agents</li><li>Scripting and strategy</li></ul><span class="go">Visit iStudios</span></a>
+<a class="arm" data-arm="academy" href="#arms"><div class="meta">Ignite Academy</div><h3>Ignite <span>Academy</span></h3>
+<p>Develops SI-native experts who ship real work, not just learn tools.</p>
+<ul><li>SI, agents and prompt engineering</li><li>Vibe coding, hardening and security</li><li>Design, data, product and marketing tracks</li><li>Capstone projects and portfolios</li></ul><span class="go">Visit the Academy</span></a>
+</div></div></section>
+
+<div class="band" role="img" aria-label="Abstract flame artwork"><img src="/assets/hero-flame.webp" alt="" loading="lazy" width="1920" height="1080"><div class="bandtxt"><div class="wrap"><div class="meta">Ignite</div><p>Agentic systems, put to work.</p></div></div></div>
+
+<section id="about"><div class="wrap"><div class="meta">About Ignite</div>
+<h2>A company built<br>Around <em>intelligent systems.</em></h2>
+<div class="abt"><div><p>Ignite is an SI-native company. We provide products, data, experts, evaluation, benchmarks and intelligence as a service, through iBuild, iStudios and Ignite Academy.</p>
+<p>Ignite operates as a queryable company, working remotely from Africa so teams anywhere can work with us. It is part of Trustbridge Corp, which provides the ownership, governance and long-term direction behind it.</p></div>
+<dl class="facts"><div><dt>Part of</dt><dd>Trustbridge Corp</dd></div><div><dt>Operates as</dt><dd>A queryable company</dd></div><div><dt>Based</dt><dd>Africa, working remotely</dd></div><div><dt>We provide</dt><dd>Six services, delivered as a service</dd></div><div><dt>The Engine</dt><dd>iBuild · iStudios · Ignite Academy</dd></div></dl></div>
+<div class="princ"><div><b>Outcomes over tools</b><span>Customers buy results, not AI. We start from what the work has to achieve.</span></div><div><b>Proof over claims</b><span>Interest is not demand. We show our work and measure what it does.</span></div><div><b>Every project leaves something</b><span>Knowledge, workflows and tools from one job make the next one better.</span></div><div><b>Learn by shipping</b><span>Mastery comes from building real things, so training ends in real work.</span></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="meta">Contact</div><h2>Let’s make something <em>real.</em></h2><p class="sub">Tell us what you’re working on. Reach us by WhatsApp, phone or email, or send an inquiry below.</p>
+<div class="contact"><a class="btn ghost" href="https://wa.me/2347042929458">WhatsApp 07042929458</a><a class="btn ghost" href="tel:07042929458">Call 07042929458</a><a class="btn ghost" href="mailto:contact.superballack@gmail.com">contact.superballack@gmail.com</a></div>
+<form id="f" data-who="Ignite"><label>Your name<input name="name" required autocomplete="name"></label><label>Email address<input name="email" type="email" required autocomplete="email"></label><label>Business / organisation (optional)<input name="org" autocomplete="organization"></label><label>What are you interested in?<select name="need" required><option value="">Select&hellip;</option><option>SI Products-as-a-Service</option><option>Data-as-a-Service</option><option>Experts-as-a-Service</option><option>Evaluation-as-a-Service</option><option>Benchmark-as-a-Service</option><option>Intelligence-as-a-Service</option><option>iBuild</option><option>iStudios</option><option>Ignite Academy</option><option>Not sure yet</option></select></label><label>Ideal timeline (optional)<input name="time"></label><label>A little about the project<textarea name="about" required></textarea></label><div class="cta"><button class="btn" type="submit">Send via WhatsApp</button><button class="btn ghost" type="button" id="em">Send via email</button></div></form><div id="msg" role="status"></div><p class="fine">Your details reach us only when you send the draft. See our <a href="/privacy/">Privacy Policy</a>.</p></div></section>
+</main>
+<footer><div class="wrap"><span>Ignite · Remote, based in Africa</span><span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/cookies/">Cookies</a> · <a href="#top">Back to top</a></span></div><div class="wrap fnav"><nav aria-label="Footer"><a href="/">Ignite</a><a href="/#about">About Us</a><a href="/build/">iBuild</a><a href="/studios/">iStudios</a><a href="/academy/">Academy</a></nav></div></footer>
+<script>
+// Arms default to paths on this site. Set ROOT_DOMAIN (e.g. "example.com") to link to subdomains instead.
+var ROOT_DOMAIN="";
+var P={build:"/build/",studios:"/studios/",academy:"/academy/"};
+document.querySelectorAll("[data-arm]").forEach(function(a){a.href=ROOT_DOMAIN?"https://"+a.dataset.arm+"."+ROOT_DOMAIN:P[a.dataset.arm]});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="/assets/motion.js"></script>
+<script src="/assets/nav.js"></script>
+<script src="/assets/contact.js"></script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body></html>

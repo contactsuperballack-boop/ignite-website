@@ -1,0 +1,130 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>#loader{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center;transition:transform .9s cubic-bezier(.76,0,.24,1)}#loader.done{transform:translateY(-100%)}
+.ld{display:grid;justify-items:center;gap:20px}.ld img{width:150px;height:150px;display:block;opacity:0;transform:scale(.92);animation:ldin .9s .1s cubic-bezier(.16,1,.3,1) forwards}
+.ldbar{width:150px;height:1px;background:rgba(255,255,255,.18);overflow:hidden}.ldbar i{display:block;height:100%;background:#E0805F;transform:scaleX(0);transform-origin:0 50%;animation:ldbar 1.5s .2s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes ldin{to{opacity:1;transform:none}}@keyframes ldbar{to{transform:scaleX(1)}}
+html.loading{overflow:hidden}.noload #loader{display:none}
+@media(prefers-reduced-motion:reduce){#loader{transition:opacity .3s}#loader.done{transform:none;opacity:0}.ld img{animation:none;opacity:1;transform:none}.ldbar i{animation:none;transform:scaleX(1)}}</style>
+<noscript><style>#loader{display:none}</style></noscript>
+<script>(function(d){try{d.classList.add(sessionStorage.getItem("ig")?"noload":"loading")}catch(e){}})(document.documentElement)</script>
+<link rel="icon" href="/assets/favicon.png"><title>Ignite Studios | Motion, Branding and Creative Production</title>
+<meta name="description" content="Ignite Studios is the creative engine of Ignite: motion graphics, branding, design, video and sound. A remote studio working with teams across Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--bg:#F4F4F0;--ink:#111;--mut:#5d5b55;--line:#D9D6CE;--ember:#AA4D31;--card:#FBFBF8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121110;--ink:#F1EFE9;--mut:#a29f96;--line:#2c2a27;--ember:#E0805F;--card:#191817;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121110;--ink:#F1EFE9;--mut:#a29f96;--line:#2c2a27;--ember:#E0805F;--card:#191817;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Outfit,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--ink);color:var(--bg);padding:8px 12px;z-index:30}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;letter-spacing:.01em}
+.brand img{width:36px;height:36px;display:block}
+nav{display:flex;align-items:center;gap:22px;font-size:15px}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg)!important;padding:12px 20px;text-decoration:none;font-weight:500;font-size:15px;border:1px solid var(--ink);transition:transform .15s}
+.btn:active{transform:scale(.98)}.btn.ghost{background:transparent;color:var(--ink)!important}
+.meta{font:500 12px/1.4 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ember)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding:72px 0 64px}
+h1{font-weight:500;font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-.025em;margin:14px 0 20px}
+h1 em,h2 em{font:italic 400 1em "Instrument Serif",serif;color:var(--ember)}
+.lead{font-size:19px;color:var(--mut);max-width:34em;margin:0 0 28px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.frame{aspect-ratio:1/1;width:100%;overflow:hidden;border:1px solid var(--line)}.frame img{width:100%;height:100%;object-fit:cover;object-position:42% 50%;display:block}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-weight:500;font-size:clamp(30px,4.4vw,48px);line-height:1.08;letter-spacing:-.02em;margin:12px 0 14px;max-width:16em}
+.sub{color:var(--mut);max-width:38em;margin:0 0 40px}
+.arms{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--card)}
+.arm{display:flex;flex-direction:column;padding:32px 28px;border-right:1px solid var(--line);text-decoration:none;transition:background .2s}
+.arm:last-child{border-right:0}.arm:hover{background:var(--bg)}
+.arm h3{font-size:30px;font-weight:500;letter-spacing:-.02em;margin:10px 0 8px}.arm h3 span{font-family:"Instrument Serif",serif;font-style:italic;color:var(--ember)}
+.arm p{color:var(--mut);margin:0 0 18px;font-size:16px}.arm ul{list-style:none;margin:0 0 28px;padding:0;font-size:15px}
+.arm li{padding:7px 0;border-top:1px solid var(--line)}.arm .go{margin-top:auto;font-weight:500}.arm .go::after{content:" \2192"}
+.sys{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.sys div{padding:22px 20px;border-right:1px solid var(--line)}.sys div:last-child{border:0}.sys b{display:block;font-weight:500;margin-bottom:4px}.sys span{color:var(--mut);font-size:15px}
+.contact{display:flex;flex-wrap:wrap;gap:12px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.svc div{padding:28px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}.svc b{display:block;font-size:20px;font-weight:500;letter-spacing:-.01em;margin-bottom:6px}.svc b i{font:italic 400 1em "Instrument Serif",serif;color:var(--ember)}.svc span{color:var(--mut);font-size:15px}@media(max-width:860px){.svc{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:36px;padding:44px 0}.arms{grid-template-columns:1fr}.arm{border-right:0;border-bottom:1px solid var(--line)}.arm:last-child{border-bottom:0}.sys{grid-template-columns:1fr 1fr}.sys div:nth-child(2){border-right:0}.sys div:nth-child(-n+2){border-bottom:1px solid var(--line)}nav .hide{display:none}section{padding:52px 0}}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.grid3>div{padding:28px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}
+.grid3 h3{font-size:21px;font-weight:500;margin:0 0 6px}.grid3 p{margin:0;color:var(--mut);font-size:15px}
+.rows>div{display:grid;grid-template-columns:.4fr 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}.rows h3{margin:0;font-size:22px;font-weight:500}.rows p{margin:0;color:var(--mut)}
+.slots{display:grid;grid-template-columns:1fr 1fr;gap:24px}.slot .frame{background:var(--card);display:grid;place-items:center;color:var(--mut);font:500 12px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;aspect-ratio:4/3}.slot h3{margin:14px 0 4px;font-weight:500}.slot p{margin:0;color:var(--mut);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.steps>div{padding:26px 24px;border-right:1px solid var(--line)}.steps>div:last-child{border:0}.steps b{display:block;font-weight:500;font-size:19px;margin:6px 0}.steps p{margin:0;color:var(--mut);font-size:15px}
+.aud{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}.aud span{border:1px solid var(--line);padding:8px 16px;font:500 13px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
+form{display:grid;gap:16px;max-width:620px;margin-top:36px}label{display:grid;gap:6px;font-size:14px;color:var(--mut)}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:12px 14px;width:100%;border-radius:0}textarea{min-height:110px}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 12px;font:inherit}
+#msg{display:none;border:1px solid var(--line);padding:14px;background:var(--card);max-width:620px;margin-top:16px}
+@media(max-width:860px){.grid3,.steps,.slots{grid-template-columns:1fr}.rows>div{grid-template-columns:1fr;gap:6px}.steps>div{border-right:0;border-bottom:1px solid var(--line)}.menu{display:block}nav .l{display:none}nav.open{position:absolute;top:64px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;padding:16px 24px}nav.open .l{display:block}}</style>
+
+
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#F4F4F0" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/studios/">
+<link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN.com/studios/"><link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN.com/studios/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Ignite"><meta property="og:title" content="Ignite Studios | Motion, Branding and Creative Production"><meta property="og:description" content="Ignite Studios is the creative engine of Ignite: motion graphics, branding, design, video and sound. A remote studio working with teams across Nigeria."><meta property="og:url" content="https://YOUR-DOMAIN.com/studios/">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-studios.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="iStudios by Ignite">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Ignite Studios | Motion, Branding and Creative Production"><meta name="twitter:description" content="Ignite Studios is the creative engine of Ignite: motion graphics, branding, design, video and sound. A remote studio working with teams across Nigeria."><meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/og-studios.png"><meta name="twitter:image:alt" content="iStudios by Ignite">
+<link rel="preload" as="image" href="/assets/hero-flame.webp" fetchpriority="high">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://YOUR-DOMAIN.com/#org","name":"Ignite","url":"https://YOUR-DOMAIN.com/","logo":{"@type":"ImageObject","url":"https://YOUR-DOMAIN.com/assets/logo.png"},"description":"Ignite is an SI-native company delivering digital products, data, experts, evaluation, benchmarks and intelligence as a service.","email":"contact.superballack@gmail.com","telephone":"+2347042929458","parentOrganization":{"@type":"Organization","name":"Trustbridge Corp"},"sameAs":["https://youtube.com/@istudio_live","https://www.tiktok.com/@istudio_live","https://www.instagram.com/istudio.live"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"contact.superballack@gmail.com","telephone":"+2347042929458"}},{"@type":"WebSite","@id":"https://YOUR-DOMAIN.com/#website","url":"https://YOUR-DOMAIN.com/","name":"Ignite","publisher":{"@id":"https://YOUR-DOMAIN.com/#org"},"inLanguage":"en"},{"@type":"WebPage","@id":"https://YOUR-DOMAIN.com/studios/#webpage","url":"https://YOUR-DOMAIN.com/studios/","name":"Ignite Studios | Motion, Branding and Creative Production","description":"Ignite Studios is the creative engine of Ignite: motion graphics, branding, design, video and sound. A remote studio working with teams across Nigeria.","inLanguage":"en","isPartOf":{"@id":"https://YOUR-DOMAIN.com/#website"},"breadcrumb":{"@id":"https://YOUR-DOMAIN.com/studios/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://YOUR-DOMAIN.com/studios/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Ignite","item":"https://YOUR-DOMAIN.com/"},{"@type":"ListItem","position":2,"name":"iStudios","item":"https://YOUR-DOMAIN.com/studios/"}]},{"@type":"Service","name":"Ignite Studios","serviceType":"Creative production","description":"Motion graphics, branding, design, video and sound for businesses, creators and public-sector teams.","provider":{"@id":"https://YOUR-DOMAIN.com/#org"},"url":"https://YOUR-DOMAIN.com/studios/"}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/premium.css">
+</head><body>
+<div id="loader" aria-hidden="true"><div class="ld"><img src="/assets/logo.webp" alt="" width="150" height="150"><div class="ldbar"><i></i></div></div></div>
+<script src="/assets/loader.js"></script>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="armbar"><div class="wrap"><a data-k="home" href="/">Ignite</a><a data-k="build" href="/build/">iBuild</a><a data-k="studios" href="/studios/" aria-current="page">iStudios</a><a data-k="academy" href="/academy/">Academy</a></div></div>
+<header><div class="wrap"><a class="brand" href="#top"><img src="/assets/logo.webp" alt="Ignite" width="36" height="36">Ignite Studios</a>
+<nav id="nav" aria-label="Primary"><a class="l" href="#create">iCreate</a><a class="l" href="#media">iMedia</a><a class="l" href="#portfolio">Portfolio</a><a class="l" href="#clients">Clients</a><a class="l" href="#contact">Contact</a><a class="btn" href="#contact">Start a project</a></nav>
+<button class="menu" id="mb" aria-expanded="false" aria-controls="nav">Menu</button></div></header>
+<main id="main"><div id="top" class="wrap hero"><div><nav class="meta" aria-label="Breadcrumb"><a href="/">Ignite</a> / <span aria-current="page">iStudios</span></nav>
+<h1>Ideas made <em>potent</em></h1>
+<p class="lead">iCreate and iMedia bring design, digital systems and story-led content together for businesses, creators and public-sector teams across Nigeria.</p>
+<div class="cta"><a class="btn" href="#contact">Start a project</a><a class="btn ghost" href="https://wa.me/2347042929458">Talk on WhatsApp</a></div>
+<p class="meta" style="margin-top:22px;color:var(--mut)">Remote by design · Working across Nigeria</p></div>
+<div class="frame"><img src="/assets/hero-flame.webp" width="1920" height="1080" fetchpriority="high" decoding="async" alt="Abstract flame-inspired artwork"></div></div>
+<div class="marquee" aria-hidden="true"><div class="mq"><span>Motion graphics</span><span>Design</span><span>Scripting</span><span>Video</span><span>Sound</span><span>Branding</span><span>Sales</span><span>Systems</span><span>Motion graphics</span><span>Design</span><span>Scripting</span><span>Video</span><span>Sound</span><span>Branding</span><span>Sales</span><span>Systems</span></div></div>
+<section><div class="wrap"><div class="meta">Services / two practices</div><h2>Creative work with <em>systems</em> behind it.</h2>
+<p class="sub"><b>Ignite Studios is the creative engine of Ignite, an SI-native company.</b> It helps teams turn ideas into considered design, useful digital experiences and media for their audiences. Remote studio · Local and Nigeria-wide.</p>
+<div class="cta"><a class="btn ghost" href="#create">iCreate</a><a class="btn ghost" href="#media">iMedia</a></div></div></section>
+<section id="create"><div class="wrap"><div class="meta">iCreate / creative production</div><h2>Make it clear. Make it <em>matter.</em></h2>
+<p class="sub">Design, content direction and production brought together around the work the client needs to do.</p>
+<div class="grid3"><div><h3>Motion Graphics</h3><p>Animations, infomercials, campaign visuals, and explainer videos.</p></div><div><h3>UI/UX &amp; Graphic Designs</h3><p>Product ads, digital product designs, UGC content, logo designs, and product visualization.</p></div><div><h3>Scripting &amp; Strategy</h3><p>Content direction, ideas and scripts shaped around the audience and goals.</p></div><div><h3>Image &amp; Video Production</h3><p>Visuals, filming/editing, documentaries, motion and platform-ready versions for channels.</p></div><div><h3>Sound &amp; Voice</h3><p>SFX, audio and voice workflows that give stories a more complete feel.</p></div></div></div></section>
+<section id="media"><div class="wrap"><div class="meta">iMedia / brand, sales &amp; systems</div><h2>Brand. Sales. <em>Systems.</em></h2>
+<p class="sub">Branding, sales support and automated systems shaped around the offer, audience and goals.</p>
+<div class="rows"><div><h3>Branding</h3><p>Profile, catalogue, promotional packages, products, product ads, UGCs.</p></div><div><h3>Sales &amp; Affiliate Marketing</h3><p>Lead generation, promotions, promotional contents and packages.</p></div><div><h3>Automated Systems &amp; Agents</h3><p>Automated workflows, research, querying and user journeys.</p></div></div></div></section>
+<section id="portfolio"><div class="wrap"><div class="meta">Selected work</div><h2>Brands we’ve <em>shaped.</em></h2><p class="sub">Logo identities with animated reveals. Press play to watch each one.</p><div class="work"><div class="wk"><video controls preload="none" playsinline poster="/assets/work/ultra-poster.webp" aria-label="Ultra logo reveal animation"><source src="/assets/work/ultra-reveal.mp4" type="video/mp4"></video><h3>Ultra</h3><p>Brand identity and animated logo reveal for a real estate brand.</p><span class="tag">Logo · Reveal animation</span></div><div class="wk"><video controls preload="none" playsinline poster="/assets/work/evmos-poster.webp" aria-label="EVMOS logo reveal animation"><source src="/assets/work/evmos-reveal.mp4" type="video/mp4"></video><h3>EVMOS</h3><p>Brand identity and animated logo reveal for an EV mobility brand.</p><span class="tag">Logo · Reveal animation</span></div><div class="wk"><video controls preload="none" playsinline poster="/assets/work/panafrica-poster.webp" aria-label="Panafrica logo reveal animation"><source src="/assets/work/panafrica-reveal.mp4" type="video/mp4"></video><h3>Panafrica</h3><p>Brand identity and animated logo reveal for a pan-African travel brand.</p><span class="tag">Logo · Reveal animation</span></div></div></div></section>
+<section id="clients"><div class="wrap"><div class="meta">Clients</div><h2>Trusted by <em>many.</em></h2><p class="sub">Teams across real estate, manufacturing, publishing and the creator economy work with Ignite Studios.</p>
+<div class="grid3"><div><h3>Ajiya Urban Rise</h3><p>Real Estate and Development</p></div><div><h3>Crafted Spaces</h3><p>CNC manufacturing company</p></div><div><h3>Sub-Saharan Papers</h3><p>Publication company</p></div></div>
+<div class="stats"><div><b>30+</b><span>Happy clients</span></div><div><b>20+</b><span>Projects completed</span></div></div>
+<div class="quotes"><blockquote>“Ignite is very different. They are literally dragging the entire SI ecosystem with them. These guys are willing to go the extra mile for their clients &amp; that’s unique!”<cite>Client feedback</cite></blockquote>
+<blockquote>“Unmatched animation and video editing service. They understand and provide exactly what I need and deliver beyond expectations every time.”<cite>Nora Bennett, Digital Creator</cite></blockquote></div></div></section>
+<section id="approach"><div class="wrap"><div class="meta">Services / approach</div><h2>From first brief to <em>final handoff.</em></h2><p class="sub">&nbsp;</p>
+<div class="steps"><div><div class="meta">01</div><b>Listen</b><p>Learn what the client is trying to achieve and who the work is for.</p></div><div><div class="meta">02</div><b>Shape</b><p>Agree on direction, deliverables, and practical next steps.</p></div><div><div class="meta">03</div><b>Make &amp; deliver</b><p>Create, refine, and hand over the work for its next use.</p></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="meta">Contact</div><h2>Let’s make something <em>real.</em></h2><p class="sub">Ignite Studios works remotely with teams locally and across Nigeria.</p>
+<div class="contact"><a class="btn ghost" href="https://wa.me/2347042929458">WhatsApp 07042929458</a><a class="btn ghost" href="tel:07042929458">Call 07042929458</a><a class="btn ghost" href="mailto:contact.superballack@gmail.com">contact.superballack@gmail.com</a></div>
+<div class="contact" style="margin-top:12px"><a class="btn ghost" href="https://youtube.com/@istudio_live" target="_blank" rel="noopener">YouTube</a><a class="btn ghost" href="https://www.tiktok.com/@istudio_live" target="_blank" rel="noopener">TikTok</a><a class="btn ghost" href="https://www.instagram.com/istudio.live" target="_blank" rel="noopener">Instagram</a></div>
+<form id="f" data-who="Ignite Studios"><label>Your name<input name="name" required autocomplete="name"></label><label>Email address<input name="email" type="email" required autocomplete="email"></label><label>Business / organisation (optional)<input name="org" autocomplete="organization"></label><label>What do you need?<select name="need" required><option value="">Select&hellip;</option><optgroup label="iCreate"><option>Motion Graphics</option><option>UI/UX &amp; Graphic Designs</option><option>Scripting &amp; Strategy</option><option>Image &amp; Video Production</option><option>Sound &amp; Voice</option></optgroup><optgroup label="iMedia"><option>Branding</option><option>Sales &amp; Affiliate Marketing</option><option>Automated Systems &amp; Agents</option></optgroup><option>Not sure yet</option></select></label><label>Ideal timeline (optional)<input name="time"></label><label>A little about the project<textarea name="about" required></textarea></label><div class="cta"><button class="btn" type="submit">Send via WhatsApp</button><button class="btn ghost" type="button" id="em">Send via email</button></div></form><div id="msg" role="status"></div><p class="fine">Your details reach us only when you send the draft. See our <a href="/privacy/">Privacy Policy</a>.</p></div></section></main>
+<footer><div class="wrap"><span>Ignite Studios · Remote creative studio · Working across Nigeria</span><span><span class="soc"><a href="https://youtube.com/@istudio_live" target="_blank" rel="noopener" aria-label="Ignite Studios on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M10.5 9.5v5l4.5-2.5z"/></svg></a><a href="https://www.tiktok.com/@istudio_live" target="_blank" rel="noopener" aria-label="Ignite Studios on TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.4 2.4 2 4 4.5 4.2"/></svg></a><a href="https://www.instagram.com/istudio.live" target="_blank" rel="noopener" aria-label="Ignite Studios on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".6"/></svg></a></span><a href="/">Ignite</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/cookies/">Cookies</a> · <a href="#top">Back to top</a> · &copy; <span id="y"></span></span></div><div class="wrap fnav"><nav aria-label="Footer"><a href="/">Ignite</a><a href="/#about">About Us</a><a href="/build/">iBuild</a><a href="/studios/">iStudios</a><a href="/academy/">Academy</a></nav></div></footer>
+<script>
+document.getElementById("y").textContent=new Date().getFullYear();
+var nav=document.getElementById("nav"),mb=document.getElementById("mb");
+mb.onclick=function(){var o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+nav.querySelectorAll("a").forEach(function(a){a.onclick=function(){nav.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="/assets/motion.js"></script>
+<script src="/assets/nav.js"></script>
+<script src="/assets/contact.js"></script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body></html>
