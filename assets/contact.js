@@ -4,14 +4,30 @@
   function track(n) { try { window.va && window.va("event", { name: n }); } catch (e) {} }
   document.querySelectorAll("form[data-who]").forEach(function (f) {
     var who = f.dataset.who, ev = f.dataset.ev || "inquiry", msg = f.nextElementSibling;
+    function g(n) { var e = f.elements[n]; return e && e.value ? e.value.trim() : ""; }
+    function end(t) { return /[.!?]$/.test(t) ? t : t + "."; }
     function text() {
-      var lines = ["Hello " + who + ","];
-      Array.prototype.forEach.call(f.elements, function (el) {
-        if (!el.name) return;
-        var l = el.closest("label"), t = l ? l.firstChild.textContent.replace(/\s*\(optional\)/, "").trim() : el.name;
-        lines.push(t + ": " + (el.value || "-"));
-      });
-      return lines.join("\n");
+      var name = g("name"), email = g("email"), org = g("org"), tm = g("time"), kind;
+      kind = f.dataset.ev === "waitlist" ? "waitlist" : (/iBuild|Studios/.test(who) ? "project" : "inquiry");
+      var out = ["Hi " + who + ","], first, contact;
+      if (kind === "waitlist") {
+        var area = g("area"), level = g("level"), phone = g("phone");
+        first = "I’m " + name + " and I’d like to join the waitlist.";
+        first += /^not sure/i.test(area) ? " I’m not sure yet which area interests me most." : " I’m most interested in " + area + ".";
+        var lv = { "Just starting out": "I’m just starting out.", "Some experience": "I have some experience.", "Working professional": "I’m a working professional." };
+        if (lv[level]) first += " " + lv[level];
+        out.push("", first, "", "What I’d like to build or do: " + end(g("goal")));
+        contact = "You can reach me at " + email + (phone ? " or on WhatsApp at " + phone : "") + ".";
+      } else {
+        var need = g("need"), unsure = /^not sure/i.test(need);
+        first = "I’m " + name + (org ? ", from " + org : "") + ".";
+        first += unsure ? " I’m not sure yet exactly what I need." : (kind === "project" ? " I need " : " I’m interested in ") + need + ".";
+        if (tm) first += " My ideal timeframe is " + end(tm);
+        out.push("", first, "", (kind === "project" ? "A little about the project: " : "A little more: ") + end(g("about")));
+        contact = "You can reach me at " + email + ".";
+      }
+      out.push("", contact, "", "Thanks,", name);
+      return out.join("\n");
     }
     function done(kind) {
       if (!msg) return;
