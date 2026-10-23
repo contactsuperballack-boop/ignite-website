@@ -55,7 +55,7 @@
   }
 
   /* Reveals: fade + rise, staggered per batch, once */
-  var sel = ".meta,h2,.lead,.sub,.cta,.arm,.svc>div,.bandtxt p,.feature>.info,.svcd>div,.abt>div,.abt>dl,.princ>div,.stats>div,.quotes>blockquote,.wk,.marks>div,.grid3>div,.rows>div,.steps>div,.slot,.aud,.contact,form,.flow,.marquee";
+  var sel = ".meta,h2,.lead,.sub,.cta,.arm,.svc>div,.bandtxt p,.feature>.info,.svcd>div,.abt>div,.abt>dl,.princ>div,.mission p,.stats>div,.quotes>blockquote,.wk,.marks>div,.grid3>div,.rows>div,.steps>div,.slot,.aud,.contact,form,.flow,.marquee";
   var items = gsap.utils.toArray(sel).filter(function (el) { return !el.closest("header") && !el.closest("footer"); });
   gsap.set(items, { opacity: 0, y: 28 });
   ScrollTrigger.batch(items, {

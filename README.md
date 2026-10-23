@@ -45,3 +45,9 @@ After you have a domain:
 3. Test pages with the Rich Results Test (search.google.com/test/rich-results) and validator.schema.org, and run Lighthouse on the live URL.
 
 Notes: the `src/` folder holds readable copies of the CSS (the files in `assets/` are minified) and is excluded from deployment by `.vercelignore`. The analytics script path `/_vercel/insights/script.js` only exists once deployed on Vercel with Web Analytics turned on.
+
+## Prop an Agent (chat)
+A guided chat widget (`assets/chat.js`, `assets/chat.css`) on the four main pages. No backend: it collects short answers and opens a WhatsApp or email draft. For appointments, set `BOOKING_URL` at the top of `assets/chat.js` to your Cal.com or Calendly link; until then it sends an appointment request instead. Change the WhatsApp number or email in the same file.
+
+## Editing styles
+The readable CSS lives in `src/assets/` (`site.css`, `premium.css`, `chat.css`, `mood.css`). The pages load the minified `assets/app.css` and `assets/mood.css`. After changing any CSS, run `node src/build-css.mjs` in the site folder. It rebuilds both files and refreshes the `?v=` version numbers on every CSS and JS link so visitors always get the latest files. After editing a JavaScript file in `assets/`, run the same command to refresh its version number.

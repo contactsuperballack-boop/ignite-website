@@ -12,7 +12,7 @@ nav{gap:36px}
 section>.wrap>.meta,#top .meta:not(p){display:flex;align-items:center;gap:14px}
 section>.wrap>.meta::before,#top .meta:not(p)::before{content:"";width:32px;height:1px;background:currentColor}
 .wrap.hero{padding:136px 48px 120px;gap:80px;grid-template-columns:1fr 1fr}
-h1{font-size:clamp(48px,7.6vw,108px);line-height:.98;letter-spacing:-.035em;margin:28px 0 32px}
+h1{font-size:clamp(44px,6vw,88px);line-height:1;letter-spacing:-.035em;margin:28px 0 32px}
 .lead{font-size:clamp(18px,1.6vw,22px);line-height:1.6;max-width:30em;margin-bottom:44px}
 .frame{position:relative}
 .frame::after{content:"";position:absolute;inset:18px;border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);pointer-events:none}
@@ -42,7 +42,7 @@ footer{padding:64px 0 88px;font-size:14px}
 .wrap.legal{max-width:856px;padding:96px 48px 120px}.legal h2{margin:56px 0 12px;font-size:26px}
 @media(max-width:860px){
   .wrap{padding:0 24px}header .wrap{height:68px}
-  .wrap.hero{padding:64px 24px 72px;gap:48px}
+  .wrap.hero{padding:64px 24px 72px;gap:48px;grid-template-columns:1fr}
   section{padding:96px 0}.sub{margin-bottom:48px;font-size:18px}
   .arm,.svcd>div,.grid3>div,.steps>div{padding:36px 28px}.princ>div{padding:32px 26px}
   .abt{gap:40px;margin-bottom:56px}.abt p:first-child{font-size:20px}
@@ -92,3 +92,31 @@ footer .fnav{display:block;margin-top:32px;padding-top:32px;border-top:1px solid
 /* Centered bar: Ignite · iBuild · iStudios · Academy */
 .armbar .wrap{justify-content:center;gap:44px}
 @media(max-width:860px){.armbar .wrap{gap:26px}}
+
+/* Mobile header fit */
+@media(max-width:860px){header .btn{padding:12px 16px;font-size:14px;white-space:nowrap}.brand{white-space:nowrap;font-size:16px;gap:10px}.brand img{width:34px;height:34px}header nav{gap:12px}}
+@media(max-width:560px){header .brand span{display:none}header .btn{padding:11px 13px;font-size:13px}.brand{font-size:15px;gap:8px}}
+@media(max-width:560px){#nav:not(.open) .btn{display:none}}
+
+/* Mission statement in About */
+.mission{margin:0 0 88px;padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mission p{font:italic 400 clamp(28px,4vw,52px)/1.2 "Instrument Serif",serif;letter-spacing:-.01em;max-width:22em;margin:20px 0 0;color:var(--ink)}
+@media(max-width:860px){.mission{margin-bottom:56px;padding:40px 0}}
+
+/* Small-screen safety: long emails and buttons wrap instead of overflowing */
+.btn{max-width:100%;overflow-wrap:anywhere;text-align:center}
+header .btn{overflow-wrap:normal}
+.legal p,.legal li,.legal a{overflow-wrap:anywhere}
+body{overflow-x:clip}
+
+/* Main hero: headline on two lines across the full width, copy and artwork side by side below */
+@media(min-width:861px){
+.wrap.hero.hero-home{grid-template-columns:1fr 1fr;grid-template-areas:"meta meta" "title title" "lead frame" "cta frame";column-gap:80px;row-gap:0;padding-top:88px;padding-bottom:104px}
+.hero-home>div:first-child{display:contents}
+.hero-home .meta{grid-area:meta}
+.hero-home h1{grid-area:title;font-size:clamp(34px,5.2vw,72px);margin:24px 0 48px}
+.hero-home .lead{grid-area:lead;align-self:end;margin-bottom:24px}
+.hero-home .cta{grid-area:cta;align-self:start}
+.hero-home .frame{grid-area:frame}
+}
+@media(max-width:860px){.hero-home h1{font-size:clamp(34px,9vw,44px)}}
